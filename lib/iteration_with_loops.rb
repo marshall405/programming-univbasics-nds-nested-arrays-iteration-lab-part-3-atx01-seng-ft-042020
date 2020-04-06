@@ -6,7 +6,8 @@ def join_nested_strings(src)
     src[index].length.times do |inner_index|
       if src[index][inner_index].is_a? String
         string_array << src[index][inner_index]
+      end 
     end
   end
-  string_array.join()
+  string_array.join(" ")
 end
